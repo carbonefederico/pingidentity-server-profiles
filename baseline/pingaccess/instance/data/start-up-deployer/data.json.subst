@@ -227,7 +227,7 @@
             "adminPassword": {
                 "value": "${PING_IDENTITY_PASSWORD}"
             },
-            "host": "abn-idp-pingfederate-engine",
+            "host": "${PF_ADMIN_PRIVATE_HOSTNAME}",
             "port": ${PF_ADMIN_PRIVATE_PORT_HTTPS},
             "basePath": "",
             "useProxy": false,
@@ -250,7 +250,7 @@
         },
         "pingFederateRuntime": {
             "description": null,
-            "issuer": "https://abn-idp-pingfederate-engine:${PF_ENGINE_PRIVATE_PORT_HTTPS}",
+            "issuer": "https://${PF_ENGINE_PRIVATE_HOSTNAME}:${PF_ENGINE_PRIVATE_PORT_HTTPS}",
             "trustedCertificateGroupId": 2,
             "useProxy": false,
             "useSlo": false,
@@ -413,7 +413,7 @@
                 "id": 2,
                 "name": "pingfederate_docker",
                 "targets": [
-                    "abn-idp-pingfederate-engine:${PF_ENGINE_PRIVATE_PORT_HTTPS}"
+                    "${PF_ENGINE_PRIVATE_HOSTNAME}:${PF_ENGINE_PRIVATE_PORT_HTTPS}"
                 ],
                 "secure": true,
                 "trustedCertificateGroupId": 2,
