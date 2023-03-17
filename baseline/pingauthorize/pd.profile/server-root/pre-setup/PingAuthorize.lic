@@ -1,0 +1,13 @@
+ID=00463191
+SCIMOnly=false
+PDPAPI=true
+Product=PingAuthorize
+Version=9.2
+EnforcementType=3
+Tier=Free
+IssueDate=2023-03-13
+ExpirationDate=2023-05-31
+DeploymentMethod=Traditional
+Organization=Ping Identity Corporation
+SignCode=FF07
+Signature=302E021500882BFEEABF8FC96DD3050AEC918F1EC94566888202150093590EED011275D1A0F9E520FF06E096B262B65C
