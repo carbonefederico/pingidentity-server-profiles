@@ -1,0 +1,12 @@
+ID=00463161
+Product=PingAccess
+Version=7.2
+EnforcementType=3
+Tier=Free
+IssueDate=2023-03-13
+ExpirationDate=2023-05-31
+DeploymentMethod=Traditional
+Organization=Ping Identity Corporation
+Name=PingAccess-7.2-Production
+SignCode=FF03
+Signature=302C02140D54A04E856E9C473496CA9FA3B1B1F1FB905E0F02140C4F2324A264E52C2C828D85AF22490913B3D076
