@@ -11,7 +11,23 @@ dsconfig set-policy-decision-service-prop \
 	--set policy-server:pingauthorizepap
 
 dsconfig create-access-token-validator \
-    --validator-name mock-atv  \
-    --type mock  \
-    --set enabled:true  \
-    --set evaluation-order-index:1
+    --validator-name PA  \
+    --type external-api-gateway  \
+    --set enabled:true
+
+
+dsconfig create-sideband-api-endpoint \
+    --endpoint-name OB.Accounts  \
+    --set base-path:/accounts 
+
+dsconfig create-sideband-api-endpoint \
+    --endpoint-name OB.Accounts.Account  \
+    --set "base-path:/accounts/{accountId}"
+
+dsconfig create-sideband-api-endpoint \
+    --endpoint-name OB.Accounts.Account.Balances  \
+    --set "base-path:/accounts/{accountId}/balances" 
+
+dsconfig create-sideband-api-endpoint \
+    --endpoint-name OB.DomesticPayments  \
+    --set base-path:/domestic-payments 
